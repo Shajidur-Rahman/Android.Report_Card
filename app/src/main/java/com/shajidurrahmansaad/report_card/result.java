@@ -15,6 +15,7 @@ public class result extends AppCompatActivity {
 
     TextView textView;
     ImageView imageView;
+    String StudentName2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +23,10 @@ public class result extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         Intent intent = getIntent();
-        String StudentName = intent.getStringExtra(MainActivity.StudentName);
+        StudentName2 = intent.getStringExtra(MainActivity.StudentName);
 
         textView = findViewById(R.id.resultName);
-        textView.setText(StudentName);
+        textView.setText(" " + StudentName2 + " ");
 
 
         imageView = findViewById(R.id.resultImg);
@@ -40,7 +41,7 @@ public class result extends AppCompatActivity {
         arrayList.add("science => 90");
         arrayList.add("global science => 90");
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(result.this, android.R.layout.simple_list_item_1);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(result.this, android.R.layout.simple_list_item_1, arrayList);
         listView.setAdapter(arrayAdapter);
 
 

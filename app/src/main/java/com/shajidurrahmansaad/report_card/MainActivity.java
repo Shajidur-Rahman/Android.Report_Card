@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static String StudentName = "com.shajidurrahmansaad.report_card.StudentName";
+    public static final String StudentName = "com.shajidurrahmansaad.report_card.StudentName";
     public  String TAG = "ShajidurRahman";
     ListView nameListView;
 
@@ -44,11 +44,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String toast = "items " + position + ((TextView) view).getText().toString() + " ";
-                StudentName = ((TextView) view).getText().toString() + "";
+                String StudentName3 = ((TextView) view).getText().toString() + "";
+
                 Intent result = new Intent(MainActivity.this, com.shajidurrahmansaad.report_card.result.class);
+                result.putExtra(StudentName, StudentName3);
                 startActivity(result);
             }
-        });
+        }
+
+        );
 
 
     }
