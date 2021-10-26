@@ -30,10 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         name = new ArrayList<>();
         name.add("Shajidur Rahman");
-        name.add("Shajidur Rahman");
-        name.add("Shajidur Rahman");
-        name.add("Shajidur Rahman");
-        name.add("Shajidur Rahman");
+        name.add("Mahmud");
+        name.add("Siyam");
         name.add("Muhib");
 
         ArrayAdapter<String> nameAdapter = new ArrayAdapter<String>(this, R.layout.name, name);
@@ -46,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String toast = "items " + position + ((TextView) view).getText().toString() + " ";
-                StudentName = ((TextView) view).getText().toString() + " ";
+                StudentName = ((TextView) view).getText().toString() + "";
                 Intent result = new Intent(MainActivity.this, com.shajidurrahmansaad.report_card.result.class);
                 startActivity(result);
             }
