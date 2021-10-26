@@ -30,8 +30,33 @@ public class MainActivity extends AppCompatActivity {
 
         name = new ArrayList<>();
         name.add("Shajidur Rahman");
+        name.add("Shajidur Rahman");
+        name.add("Shajidur Rahman");
+        name.add("Shajidur Rahman");
+        name.add("Shajidur Rahman");
+        name.add("Mahmud");
+        name.add("Mahmud");
+        name.add("Mahmud");
+        name.add("Mahmud");
+        name.add("Mahmud");
+        name.add("Mahmud");
+        name.add("Mahmud");
+        name.add("Mahmud");
+        name.add("Mahmud");
+        name.add("Mahmud");
+        name.add("Mahmud");
+        name.add("Mahmud");
+        name.add("Mahmud");
         name.add("Mahmud");
         name.add("Siyam");
+        name.add("Muhib");
+        name.add("Muhib");
+        name.add("Muhib");
+        name.add("Muhib");
+        name.add("Muhib");
+        name.add("Muhib");
+        name.add("Muhib");
+        name.add("Muhib");
         name.add("Muhib");
 
         ArrayAdapter<String> nameAdapter = new ArrayAdapter<String>(this, R.layout.name, name);
